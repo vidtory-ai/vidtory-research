@@ -1,0 +1,4 @@
+interface:
+  display_name: "Character Sheet Animator"
+  short_description: "Create consistent character and animation sheets"
+  default_prompt: "Use $character-sheet-animator to create a canonical character sheet and animation sheet from a concept or reference images, preserving identity across views, expressions, poses, and frame rows."

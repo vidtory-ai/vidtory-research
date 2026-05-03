@@ -1,0 +1,95 @@
+{
+  "schema": "character-sheet-animator.manifest.v1",
+  "character": {
+    "id": "vidtory-spark",
+    "display_name": "Vidtory Spark",
+    "description": "A friendly AI video company mascot for vidtory.ai, inspired by the Vidtory play-button logo and green-to-cyan brand gradient.",
+    "notes": "Mascot should feel like a helpful AI video creator companion: playful, clever, production-ready, with a body silhouette subtly inspired by a play button and video frame. Preserve Vidtory brand colors: vivid lime green, mint green, turquoise/cyan, plus deep navy or white accents depending on background. Do not put readable brand text inside the character."
+  },
+  "style_notes": "clean modern 2D mascot, app-brand character design, rounded geometric shapes, crisp vector-like edges, strong silhouette, simple face, expressive eyes, premium SaaS/video-creation feel, not childish, not a generic robot",
+  "outputs": [
+    {
+      "id": "base",
+      "type": "canonical-base",
+      "path": "generated/base.png",
+      "prompt": "prompts/base.txt",
+      "metadata": {
+        "width": 1086,
+        "height": 1448,
+        "mode": "RGB",
+        "format": "PNG"
+      },
+      "qa_status": "pending-visual-review"
+    },
+    {
+      "id": "character-sheet",
+      "type": "character-sheet",
+      "path": "generated/character-sheet.png",
+      "prompt": "prompts/character-sheet.txt",
+      "metadata": {
+        "width": 1774,
+        "height": 887,
+        "mode": "RGB",
+        "format": "PNG"
+      },
+      "qa_status": "pending-visual-review"
+    },
+    {
+      "id": "base-transparent",
+      "type": "canonical-base-alpha",
+      "path": "processed/base-transparent.png",
+      "source": "generated/base.png",
+      "qa_status": "alpha-generated"
+    },
+    {
+      "id": "character-sheet-transparent",
+      "type": "character-sheet-alpha",
+      "path": "processed/character-sheet-transparent.png",
+      "source": "generated/character-sheet.png",
+      "qa_status": "alpha-generated"
+    },
+    {
+      "id": "sprite-sheet",
+      "type": "combined-animation-sprite-sheet",
+      "path": "generated/sprite-sheet.png",
+      "transparent_path": "processed/sprite-sheet-transparent.png",
+      "source_path": "/Users/brianle/.codex/generated_images/019dec46-de16-7792-8221-ec98fef6d05a/ig_0b1797f10d93ef140169f6e0a3d16c8191892a5b5f84ad67b4.png",
+      "source_sha256": "c7174fe11613dbfa349911b5b0d44264112d89087683fe876985b98a398d5650",
+      "output_sha256": "c7174fe11613dbfa349911b5b0d44264112d89087683fe876985b98a398d5650",
+      "prompt": "inline imagegen prompt: 4 rows idle/present/wave/run-right",
+      "rows": [
+        {
+          "id": "idle",
+          "frames": 6,
+          "direction": "front",
+          "loop": true
+        },
+        {
+          "id": "present",
+          "frames": 6,
+          "direction": "front",
+          "loop": false
+        },
+        {
+          "id": "wave",
+          "frames": 6,
+          "direction": "front",
+          "loop": false
+        },
+        {
+          "id": "run-right",
+          "frames": 8,
+          "direction": "right",
+          "loop": true
+        }
+      ],
+      "qa_status": "pending-visual-review"
+    }
+  ],
+  "animation_rows": [],
+  "limitations": [
+    "Visual identity still requires human inspection.",
+    "Combined sprite sheet was generated as one visual sheet; individual per-row engine-grade strips remain planned jobs.",
+    "Transparent files were produced by chroma-key removal and need visual edge review before production use."
+  ]
+}

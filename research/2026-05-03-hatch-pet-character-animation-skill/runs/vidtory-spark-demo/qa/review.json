@@ -1,0 +1,64 @@
+{
+  "ok": true,
+  "run_dir": "/Users/brianle/Documents/Code/Vidtory/Vidtory-Research/Codex/research/2026-05-03-hatch-pet-character-animation-skill/runs/vidtory-spark-demo",
+  "checked_outputs": [
+    {
+      "job_id": "base",
+      "path": "generated/base.png",
+      "metadata": {
+        "width": 1086,
+        "height": 1448,
+        "mode": "RGB",
+        "has_alpha": false
+      }
+    },
+    {
+      "job_id": "character-sheet",
+      "path": "generated/character-sheet.png",
+      "metadata": {
+        "width": 1774,
+        "height": 887,
+        "mode": "RGB",
+        "has_alpha": false
+      }
+    },
+    {
+      "job_id": "sprite-sheet",
+      "path": "generated/sprite-sheet.png",
+      "metadata": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "has_alpha": false
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "job_id": "video-consistency-pack",
+      "message": "job is not complete"
+    },
+    {
+      "job_id": "row-idle",
+      "message": "job is not complete"
+    },
+    {
+      "job_id": "row-present",
+      "message": "job is not complete"
+    },
+    {
+      "job_id": "row-wave",
+      "message": "job is not complete"
+    },
+    {
+      "job_id": "row-run",
+      "message": "job is not complete"
+    }
+  ],
+  "visual_review_required": [
+    "same character identity across every sheet and frame",
+    "no accidental redesign, extra character, generated text, or copied layout guide",
+    "animation frames are distinct poses, not repeated static transforms"
+  ]
+}

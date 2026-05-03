@@ -1,0 +1,24 @@
+
+Create a clean character model sheet for the same character shown in the attached canonical base.
+
+Identity lock:
+- preserve the exact same character: proportions, face, palette, costume, markings, props, and rendering style
+- no redesigns and no alternate character
+
+Sheet layout:
+- one character repeated across clean panels
+- full-body views: front, three-quarter front, side, three-quarter back, back
+- consistent scale and camera height across views
+- neutral pose for each view
+- clean spacing, no scene
+
+Style:
+- match the canonical base exactly
+- clean modern 2D mascot, app-brand character design, rounded geometric shapes, crisp vector-like edges, strong silhouette, simple face, expressive eyes, premium SaaS/video-creation feel, not childish, not a generic robot
+
+Avoid:
+- labels or generated text unless explicitly requested
+- extra characters, scenery, shadows, watermarks, UI, speech bubbles
+- cropped limbs, inconsistent height, different costume, changed markings
+
+Character name for manifest only: Vidtory Spark

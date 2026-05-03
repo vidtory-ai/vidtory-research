@@ -1,0 +1,386 @@
+{
+  "schema": "character-sheet-animator.generation-jobs.v1",
+  "run_dir": "/Users/brianle/Documents/Code/Vidtory/Vidtory-Research/Codex/research/2026-05-03-hatch-pet-character-animation-skill/runs/vidtory-spark-demo",
+  "request_path": "request.json",
+  "jobs": [
+    {
+      "id": "base",
+      "kind": "canonical-base",
+      "status": "complete",
+      "prompt_file": "prompts/base.txt",
+      "output_path": "generated/base.png",
+      "depends_on": [],
+      "input_images": [
+        {
+          "path": "references/input-01.png",
+          "role": "identity reference"
+        },
+        {
+          "path": "references/input-02.png",
+          "role": "supporting reference"
+        }
+      ],
+      "generation_skill": "$imagegen",
+      "allow_prompt_only_generation": true,
+      "requires_grounded_generation": false,
+      "recording_owner": "parent",
+      "source_path": "/Users/brianle/.codex/generated_images/019dec46-de16-7792-8221-ec98fef6d05a/ig_0b1797f10d93ef140169f6dfe9ab3c81919a0d915bb214cabd.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "49ffbf034d7b7c3db16494cda82ce15cd43a4c14d9d22785d7faac143f1a4e91",
+      "output_sha256": "49ffbf034d7b7c3db16494cda82ce15cd43a4c14d9d22785d7faac143f1a4e91",
+      "completed_at": "2026-05-03T05:42:04.833284+00:00",
+      "metadata": {
+        "width": 1086,
+        "height": 1448,
+        "mode": "RGB",
+        "format": "PNG"
+      },
+      "canonical_reference_path": "references/canonical-base.png",
+      "transparent_output_path": "processed/base-transparent.png"
+    },
+    {
+      "id": "character-sheet",
+      "kind": "character-sheet",
+      "status": "complete",
+      "prompt_file": "prompts/character-sheet.txt",
+      "output_path": "generated/character-sheet.png",
+      "depends_on": [
+        "base"
+      ],
+      "input_images": [
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "references/input-01.png",
+          "role": "identity reference"
+        },
+        {
+          "path": "references/input-02.png",
+          "role": "supporting reference"
+        }
+      ],
+      "generation_skill": "$imagegen",
+      "allow_prompt_only_generation": false,
+      "requires_grounded_generation": true,
+      "recording_owner": "parent",
+      "source_path": "/Users/brianle/.codex/generated_images/019dec46-de16-7792-8221-ec98fef6d05a/ig_0b1797f10d93ef140169f6e0441ee4819180b15a5601506423.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "26cd371247e93a9db51332d31cb48303699db6d7b9f45848d773daf38d5e5d65",
+      "output_sha256": "26cd371247e93a9db51332d31cb48303699db6d7b9f45848d773daf38d5e5d65",
+      "completed_at": "2026-05-03T05:43:43.015460+00:00",
+      "metadata": {
+        "width": 1774,
+        "height": 887,
+        "mode": "RGB",
+        "format": "PNG"
+      },
+      "transparent_output_path": "processed/character-sheet-transparent.png"
+    },
+    {
+      "id": "video-consistency-pack",
+      "kind": "video-consistency-pack",
+      "status": "pending",
+      "prompt_file": "prompts/video-consistency-pack.txt",
+      "output_path": "generated/video-consistency-pack.png",
+      "depends_on": [
+        "base"
+      ],
+      "input_images": [
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "references/input-01.png",
+          "role": "identity reference"
+        },
+        {
+          "path": "references/input-02.png",
+          "role": "supporting reference"
+        }
+      ],
+      "generation_skill": "$imagegen",
+      "allow_prompt_only_generation": false,
+      "requires_grounded_generation": true,
+      "recording_owner": "parent"
+    },
+    {
+      "id": "row-idle",
+      "kind": "animation-row",
+      "status": "pending",
+      "prompt_file": "prompts/rows/idle.txt",
+      "output_path": "generated/rows/idle.png",
+      "depends_on": [
+        "base"
+      ],
+      "input_images": [
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "references/input-01.png",
+          "role": "identity reference"
+        },
+        {
+          "path": "references/input-02.png",
+          "role": "supporting reference"
+        },
+        {
+          "path": "references/layout-guides/idle.png",
+          "role": "layout guide"
+        }
+      ],
+      "generation_skill": "$imagegen",
+      "allow_prompt_only_generation": false,
+      "requires_grounded_generation": true,
+      "recording_owner": "parent",
+      "action": {
+        "id": "idle",
+        "frames": 6,
+        "direction": "front",
+        "loop": true,
+        "notes": "subtle breathing, blink, small play-button glow pulse"
+      },
+      "layout_guide": {
+        "path": "references/layout-guides/idle.png",
+        "metadata": {
+          "path": "/Users/brianle/Documents/Code/Vidtory/Vidtory-Research/Codex/research/2026-05-03-hatch-pet-character-animation-skill/runs/vidtory-spark-demo/references/layout-guides/idle.png",
+          "frames": 6,
+          "cell_width": 512,
+          "cell_height": 512,
+          "width": 3072,
+          "height": 512
+        }
+      }
+    },
+    {
+      "id": "row-present",
+      "kind": "animation-row",
+      "status": "pending",
+      "prompt_file": "prompts/rows/present.txt",
+      "output_path": "generated/rows/present.png",
+      "depends_on": [
+        "base"
+      ],
+      "input_images": [
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "references/input-01.png",
+          "role": "identity reference"
+        },
+        {
+          "path": "references/input-02.png",
+          "role": "supporting reference"
+        },
+        {
+          "path": "references/layout-guides/present.png",
+          "role": "layout guide"
+        }
+      ],
+      "generation_skill": "$imagegen",
+      "allow_prompt_only_generation": false,
+      "requires_grounded_generation": true,
+      "recording_owner": "parent",
+      "action": {
+        "id": "present",
+        "frames": 6,
+        "direction": "front",
+        "loop": false,
+        "notes": "gesture as if presenting a generated video frame"
+      },
+      "layout_guide": {
+        "path": "references/layout-guides/present.png",
+        "metadata": {
+          "path": "/Users/brianle/Documents/Code/Vidtory/Vidtory-Research/Codex/research/2026-05-03-hatch-pet-character-animation-skill/runs/vidtory-spark-demo/references/layout-guides/present.png",
+          "frames": 6,
+          "cell_width": 512,
+          "cell_height": 512,
+          "width": 3072,
+          "height": 512
+        }
+      }
+    },
+    {
+      "id": "row-wave",
+      "kind": "animation-row",
+      "status": "pending",
+      "prompt_file": "prompts/rows/wave.txt",
+      "output_path": "generated/rows/wave.png",
+      "depends_on": [
+        "base"
+      ],
+      "input_images": [
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "references/input-01.png",
+          "role": "identity reference"
+        },
+        {
+          "path": "references/input-02.png",
+          "role": "supporting reference"
+        },
+        {
+          "path": "references/layout-guides/wave.png",
+          "role": "layout guide"
+        }
+      ],
+      "generation_skill": "$imagegen",
+      "allow_prompt_only_generation": false,
+      "requires_grounded_generation": true,
+      "recording_owner": "parent",
+      "action": {
+        "id": "wave",
+        "frames": 6,
+        "direction": "front",
+        "loop": false,
+        "notes": "friendly greeting through arm pose only"
+      },
+      "layout_guide": {
+        "path": "references/layout-guides/wave.png",
+        "metadata": {
+          "path": "/Users/brianle/Documents/Code/Vidtory/Vidtory-Research/Codex/research/2026-05-03-hatch-pet-character-animation-skill/runs/vidtory-spark-demo/references/layout-guides/wave.png",
+          "frames": 6,
+          "cell_width": 512,
+          "cell_height": 512,
+          "width": 3072,
+          "height": 512
+        }
+      }
+    },
+    {
+      "id": "row-run",
+      "kind": "animation-row",
+      "status": "pending",
+      "prompt_file": "prompts/rows/run.txt",
+      "output_path": "generated/rows/run.png",
+      "depends_on": [
+        "base"
+      ],
+      "input_images": [
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "references/input-01.png",
+          "role": "identity reference"
+        },
+        {
+          "path": "references/input-02.png",
+          "role": "supporting reference"
+        },
+        {
+          "path": "references/layout-guides/run.png",
+          "role": "layout guide"
+        }
+      ],
+      "generation_skill": "$imagegen",
+      "allow_prompt_only_generation": false,
+      "requires_grounded_generation": true,
+      "recording_owner": "parent",
+      "action": {
+        "id": "run",
+        "frames": 8,
+        "direction": "right",
+        "loop": true,
+        "notes": "energetic production sprint motion without speed lines"
+      },
+      "layout_guide": {
+        "path": "references/layout-guides/run.png",
+        "metadata": {
+          "path": "/Users/brianle/Documents/Code/Vidtory/Vidtory-Research/Codex/research/2026-05-03-hatch-pet-character-animation-skill/runs/vidtory-spark-demo/references/layout-guides/run.png",
+          "frames": 8,
+          "cell_width": 512,
+          "cell_height": 512,
+          "width": 4096,
+          "height": 512
+        }
+      }
+    },
+    {
+      "id": "sprite-sheet",
+      "kind": "combined-animation-sprite-sheet",
+      "status": "complete",
+      "prompt_file": null,
+      "output_path": "generated/sprite-sheet.png",
+      "transparent_output_path": "processed/sprite-sheet-transparent.png",
+      "depends_on": [
+        "base",
+        "character-sheet"
+      ],
+      "input_images": [
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "generated/character-sheet.png",
+          "role": "character model sheet reference"
+        },
+        {
+          "path": "references/input-01.png",
+          "role": "identity reference"
+        },
+        {
+          "path": "references/input-02.png",
+          "role": "supporting reference"
+        }
+      ],
+      "generation_skill": "$imagegen",
+      "allow_prompt_only_generation": false,
+      "requires_grounded_generation": true,
+      "recording_owner": "parent",
+      "source_path": "/Users/brianle/.codex/generated_images/019dec46-de16-7792-8221-ec98fef6d05a/ig_0b1797f10d93ef140169f6e0a3d16c8191892a5b5f84ad67b4.png",
+      "source_provenance": "built-in-imagegen",
+      "source_sha256": "c7174fe11613dbfa349911b5b0d44264112d89087683fe876985b98a398d5650",
+      "output_sha256": "c7174fe11613dbfa349911b5b0d44264112d89087683fe876985b98a398d5650",
+      "completed_at": "2026-05-03T05:46:18.791Z",
+      "rows": [
+        {
+          "id": "idle",
+          "frames": 6,
+          "direction": "front",
+          "loop": true
+        },
+        {
+          "id": "present",
+          "frames": 6,
+          "direction": "front",
+          "loop": false
+        },
+        {
+          "id": "wave",
+          "frames": 6,
+          "direction": "front",
+          "loop": false
+        },
+        {
+          "id": "run-right",
+          "frames": 8,
+          "direction": "right",
+          "loop": true
+        }
+      ]
+    }
+  ],
+  "canonical_identity_reference": {
+    "path": "references/canonical-base.png",
+    "source_job": "base",
+    "sha256": "49ffbf034d7b7c3db16494cda82ce15cd43a4c14d9d22785d7faac143f1a4e91",
+    "metadata": {
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGB",
+      "format": "PNG"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+
+Create a clean AI video consistency reference plate for the same character shown in the attached canonical base.
+
+Identity lock:
+- preserve the attached canonical character exactly
+- prioritize stable silhouette, readable face, costume, markings, palette, and prop placement
+
+Plate contents:
+- one neutral full-body pose
+- one action key pose
+- one close-up face reference
+- one side or back reference
+
+Style:
+- clean modern 2D mascot, app-brand character design, rounded geometric shapes, crisp vector-like edges, strong silhouette, simple face, expressive eyes, premium SaaS/video-creation feel, not childish, not a generic robot
+- clean lighting, no extreme perspective, no heavy effects
+
+Avoid:
+- poster composition, cinematic background, text, logos, watermarks, extra characters
+- changing costume, age, species, palette, or proportions

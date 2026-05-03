@@ -1,0 +1,23 @@
+
+Create the canonical visual reference for this character.
+
+Character:
+- Name: Vidtory Spark
+- Description: A friendly AI video company mascot for vidtory.ai, inspired by the Vidtory play-button logo and green-to-cyan brand gradient.
+- Character notes: Mascot should feel like a helpful AI video creator companion: playful, clever, production-ready, with a body silhouette subtly inspired by a play button and video frame. Preserve Vidtory brand colors: vivid lime green, mint green, turquoise/cyan, plus deep navy or white accents depending on background. Do not put readable brand text inside the character.
+
+Style:
+- clean modern 2D mascot, app-brand character design, rounded geometric shapes, crisp vector-like edges, strong silhouette, simple face, expressive eyes, premium SaaS/video-creation feel, not childish, not a generic robot
+
+Composition:
+- one full-body character only
+- neutral standing pose
+- clear front three-quarter view
+- complete unclipped body
+- generous padding around the character
+- Use a perfectly flat solid #FF00FF chroma-key background for later background removal.
+
+Avoid:
+- extra characters, scenery, UI, fake labels, watermarks, speech bubbles
+- dramatic lighting that hides design details
+- changing or omitting required identity details

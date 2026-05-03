@@ -1,0 +1,35 @@
+
+Create one animation row strip for the same character shown in the attached canonical base.
+
+Action:
+- Row id: wave
+- Frame count: 6
+- Direction: front
+- Looping: False
+- Motion notes: friendly greeting through arm pose only
+
+Identity lock:
+- preserve the same character, proportions, face, costume, markings, palette, props, and style
+- no redesigns and no extra characters
+
+Layout:
+- 6 complete full-body frames in one horizontal row
+- frames are evenly spaced and separated
+- each pose stays inside its own frame slot with safe padding
+- no visible grid, labels, frame numbers, borders, or construction marks
+- Use a perfectly flat solid #FF00FF chroma-key background for background removal. Do not use #FF00FF anywhere in the character, props, effects, highlights, or shadows.
+
+Animation quality:
+- each frame should be a distinct pose in the action cycle
+- The row should read as a clear non-looping action sequence.
+- show motion through body, limbs, cloth, hair, or prop pose changes
+
+Style:
+- clean modern 2D mascot, app-brand character design, rounded geometric shapes, crisp vector-like edges, strong silhouette, simple face, expressive eyes, premium SaaS/video-creation feel, not childish, not a generic robot
+
+Avoid:
+- repeated duplicate frames
+- cropped body parts
+- pose crossing into adjacent slot
+- speed lines, dust, shadows, glows, afterimages, motion smears, floating icons
+- text, UI, watermarks, scenery

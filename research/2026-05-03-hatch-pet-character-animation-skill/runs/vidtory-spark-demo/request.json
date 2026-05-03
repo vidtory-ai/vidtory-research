@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-05-03T05:40:45.277761+00:00",
+  "character": {
+    "id": "vidtory-spark",
+    "display_name": "Vidtory Spark",
+    "description": "A friendly AI video company mascot for vidtory.ai, inspired by the Vidtory play-button logo and green-to-cyan brand gradient.",
+    "notes": "Mascot should feel like a helpful AI video creator companion: playful, clever, production-ready, with a body silhouette subtly inspired by a play button and video frame. Preserve Vidtory brand colors: vivid lime green, mint green, turquoise/cyan, plus deep navy or white accents depending on background. Do not put readable brand text inside the character."
+  },
+  "style_notes": "clean modern 2D mascot, app-brand character design, rounded geometric shapes, crisp vector-like edges, strong silhouette, simple face, expressive eyes, premium SaaS/video-creation feel, not childish, not a generic robot",
+  "outputs": [
+    "character-sheet",
+    "animation-sheet",
+    "video-consistency-pack"
+  ],
+  "transparent": true,
+  "chroma_key": "#FF00FF",
+  "geometry": {
+    "cell_width": 512,
+    "cell_height": 512
+  },
+  "actions": [
+    {
+      "id": "idle",
+      "frames": 6,
+      "direction": "front",
+      "loop": true,
+      "notes": "subtle breathing, blink, small play-button glow pulse"
+    },
+    {
+      "id": "present",
+      "frames": 6,
+      "direction": "front",
+      "loop": false,
+      "notes": "gesture as if presenting a generated video frame"
+    },
+    {
+      "id": "wave",
+      "frames": 6,
+      "direction": "front",
+      "loop": false,
+      "notes": "friendly greeting through arm pose only"
+    },
+    {
+      "id": "run",
+      "frames": 8,
+      "direction": "right",
+      "loop": true,
+      "notes": "energetic production sprint motion without speed lines"
+    }
+  ],
+  "references": [
+    {
+      "path": "references/input-01.png",
+      "source_path": "/Users/brianle/Documents/Marketing/Vidtory/logovidtory-light.png",
+      "role": "identity reference",
+      "metadata": {
+        "width": 966,
+        "height": 308,
+        "mode": "RGBA",
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "references/input-02.png",
+      "source_path": "/Users/brianle/Documents/Marketing/Vidtory/logovidtory-dark.png",
+      "role": "supporting reference",
+      "metadata": {
+        "width": 966,
+        "height": 308,
+        "mode": "RGBA",
+        "format": "PNG"
+      }
+    }
+  ],
+  "canonical_identity_reference": {
+    "path": "references/canonical-base.png",
+    "source_job": "base",
+    "sha256": "49ffbf034d7b7c3db16494cda82ce15cd43a4c14d9d22785d7faac143f1a4e91",
+    "metadata": {
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGB",
+      "format": "PNG"
+    }
+  }
+}

@@ -11,6 +11,7 @@ Repo này lưu trữ và chia sẻ công khai những phân tích, reverse-engin
 | # | Ngày | Chủ đề | Mô tả |
 |---|------|--------|-------|
 | 1 | 2026-04-25 | [Codex ImageGen Skill](./research/2026-04-25-codex-imagegen-skill/) | Phân tích toàn bộ cơ chế hoạt động của skill sinh ảnh `imagegen` trong OpenAI Codex — built-in tool API spec, prompt schema, transparent image workflow (chroma-key hack), model matrix, CLI fallback |
+| 2 | 2026-05-03 | [Hatch Pet → Character Sheet Animator](./research/2026-05-03-hatch-pet-character-animation-skill/) | Snapshot toàn bộ skill `hatch-pet`, rewrite thành skill tổng quát tạo character sheet/animation sheet, kèm script layer runnable và demo Vidtory mascot/sprite sheet |
 
 ---
 
